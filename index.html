@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jMutants</title>
+  </head>
+  <body>
+    <h1>jMutants</h1>
+    <form id="new_mutant">
+      <input type="text"
+             name="mutantName"
+             placeholder="Enter mutant name"
+             required>
+      <input type="text"
+             name="realName"
+             placeholder="Enter real name"
+             required>
+      <input type="text"
+             name="power"
+             placeholder="Enter power"
+             required>
+      <button type="submit" name="action">Create</button>
+      <button type="submit" name="update">Update</button>
+    </from>
+    <ul id="mutantList">
+      <li class="template">
+        <span class="mutant-name">Wolverine</span>
+        <a href="#" class="delete">(delete)</a>
+      </li>
+    </ul>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.min.js"></script>
+        <!--went to cdnjs.com and searched "jquery" for this -->
+    <script src="load-mutants.js"></script>
+    <script src="create-mutant.js"></script>
+    <!-- <script src="add-mutants.js"></script> -->
+    <script src="delete-mutant.js"></script>
+    <!-- <script src="app.js"></script> -->
+  </body>
+</html>
